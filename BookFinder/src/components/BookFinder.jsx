@@ -237,6 +237,7 @@ const BookFinder = () => {
               >
                 {loading ? (
                   <>
+
                     <HiRefresh className="w-5 h-5 animate-spin" />
                     Searching...
                   </>
@@ -349,7 +350,7 @@ const BookFinder = () => {
         <div className="p-4 lg:p-6 relative max-h-[calc(100vh-80px)] overflow-y-auto">
         
           {loading && (
-            <div className="absolute inset-0 bg-white bg-opacity-80 flex justify-center items-center z-30">
+            <div className="fixed inset-0   bg-white bg-opacity-80 flex justify-center items-center z-30">
               <div className="text-center">
                 <HiRefresh className="w-8 h-8 text-blue-600 animate-spin mx-auto mb-3" />
                 <p className="text-lg text-gray-700">Searching books...</p>
